@@ -1,0 +1,22 @@
+
+
+<h1>Ders Bilgileri</h1>
+
+{{ders.Id}} {{ders.DersAdi}} {{ders.DersKodu}} {{ders.DersAciklamasi}} 
+
+
+
+
+<h1>Dersi Alan Öğrenciler</h1>
+ 
+
+<pre>{{ogrenciler.Ad}} {{ogrenciler.Soyad}}</pre>
+
+
+
+<h1>Dersi Veren Akademisyenler</h1>
+
+{% for akademisyen in akademisyenler %}
+<pre> {{akademisyen.Ad}} {{akademisyen.Soyad}} </pre>
+{% endfor %}
+

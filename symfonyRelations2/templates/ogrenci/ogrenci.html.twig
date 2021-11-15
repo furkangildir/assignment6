@@ -1,0 +1,15 @@
+ <h1>Öğrenci Bilgileri</h1>
+
+<pre>{{ogrenci.Id}} {{ogrenci.Ad}} {{ogrenci.Soyad}} {{ogrenci.OgrenciNo}}</pre>
+
+
+
+
+<h1>Aldığı Dersler</h1>
+
+{% for ders in dersler %}
+
+<pre>{{ders.Id}} {{ders.DersAdi}} {{ders.DersKodu}} {{ders.DersAciklamasi}} </pre>
+
+{% endfor %}
+
